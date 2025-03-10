@@ -80,6 +80,7 @@ public class PrimaryController {
     private void switchToSecondary() throws IOException {
         DemoApp.setRoot("secondary");
     }
+
     public boolean readFirebase()
     {
         key = false;
@@ -140,7 +141,6 @@ public class PrimaryController {
             System.out.println("Error creating a new user in the firebase");
             return false;
         }
-
     }
 
     public void addData() {

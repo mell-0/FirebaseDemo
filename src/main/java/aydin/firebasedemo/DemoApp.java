@@ -38,7 +38,9 @@ public class DemoApp extends Application {
         fstore = contxtFirebase.firebase();
         fauth = FirebaseAuth.getInstance();
 
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        //scene = new Scene(loadFXML("primary"), 640, 480); // this changes the starting page?
+        scene = new Scene(loadFXML("Welcome_Screen"), 640, 480);
+
         stage.setScene(scene);
         stage.show();
     }

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aydin.firebasedemo.PrimaryController">
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aydin.firebasedemo.PrimaryController">
     <children>
         <VBox alignment="CENTER" prefHeight="373.0" prefWidth="530.0" spacing="20.0">
             <padding>
@@ -19,6 +19,7 @@
             <Label text="CSC325-SW Engineering Student: check out the console window for the output messages..." />
                 <TextField fx:id="nameTextField" promptText="name" />
                 <TextField fx:id="ageTextField" promptText="age" />
+                <TextField fx:id="phoneTextField" promptText="phone number" />
                 <HBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="518.0" spacing="10.0">
                     <children>
                         <Button fx:id="readButton" mnemonicParsing="false" onAction="#readButtonClicked" prefHeight="30.0" prefWidth="80.0" text="Read" />

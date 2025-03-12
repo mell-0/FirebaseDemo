@@ -53,7 +53,7 @@ public class WelcomeScreenController
         String username = usernameTextField.getText();
         String password = passwordTextField.getText();
 
-        //
+        // if signIn returns true if matching username & password was found & goes to the primary screen
         if (signIn(username, password))
         {
             System.out.println(username + " is in database");
@@ -163,6 +163,7 @@ public class WelcomeScreenController
                     user = document.getData().get("UserName").toString();
                     pass = document.getData().get("Password").toString();
 
+                    // exits the method and returns true when matching username & password was found
                     if (username.equals(user) && password.equals(pass))
                         return true;
                 }

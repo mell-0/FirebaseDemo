@@ -5,11 +5,11 @@ public class Person {
     private int age;
     private String phoneNumber;
 
-    public Person(String name, int age)//, String phoneN)
+    public Person(String name, int age, String phoneN)
     {
         this.name = name;
         this.age = age;
-        //this.phoneNumber = phoneN;
+        this.phoneNumber = phoneN;
     }
 
     public String getName() {

@@ -35,8 +35,8 @@ public class PrimaryController {
     @FXML
     private Button readButton;
 
-    @FXML
-    private Button registerButton;
+//    @FXML
+//    private Button registerButton;
 
     @FXML
     private Button switchSecondaryViewButton;
@@ -65,10 +65,10 @@ public class PrimaryController {
         readFirebase();
     }
 
-    @FXML
-    void registerButtonClicked(ActionEvent event) {
-        registerUser();
-    }
+//    @FXML
+//    void registerButtonClicked(ActionEvent event) {
+//        registerUser();
+//    }
 
 
     @FXML
@@ -91,7 +91,7 @@ public class PrimaryController {
         List<QueryDocumentSnapshot> documents;
         try
         {
-            documents = future.get().getDocuments();
+            documents = future.get().getDocuments(); // stores all the entries in the database in Persons collection
             if(documents.size()>0)
             {
                 System.out.println("Getting (reading) data from firabase database....");
@@ -120,28 +120,28 @@ public class PrimaryController {
         return key;
     }
 
-    public boolean registerUser() {
-        UserRecord.CreateRequest request = new UserRecord.CreateRequest()
-                .setEmail("user222@example.com")
-                .setEmailVerified(false)
-                .setPassword("secretPassword")
-                .setPhoneNumber("+11234567890")
-                .setDisplayName("John Doe")
-                .setDisabled(false);
-
-        UserRecord userRecord;
-        try {
-            userRecord = DemoApp.fauth.createUser(request);
-            System.out.println("Successfully created new user with Firebase Uid: " + userRecord.getUid()
-            + " check Firebase > Authentication > Users tab");
-            return true;
-
-        } catch (FirebaseAuthException ex) {
-            // Logger.getLogger(FirestoreContext.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("Error creating a new user in the firebase");
-            return false;
-        }
-    }
+//    public boolean registerUser() {
+//        UserRecord.CreateRequest request = new UserRecord.CreateRequest()
+//                .setEmail("user222@example.com")
+//                .setEmailVerified(false)
+//                .setPassword("secretPassword")
+//                .setPhoneNumber("+11234567890")
+//                .setDisplayName("John Doe")
+//                .setDisabled(false);
+//
+//        UserRecord userRecord;
+//        try {
+//            userRecord = DemoApp.fauth.createUser(request);
+//            System.out.println("Successfully created new user with Firebase Uid: " + userRecord.getUid()
+//            + " check Firebase > Authentication > Users tab");
+//            return true;
+//
+//        } catch (FirebaseAuthException ex) {
+//            // Logger.getLogger(FirestoreContext.class.getName()).log(Level.SEVERE, null, ex);
+//            System.out.println("Error creating a new user in the firebase");
+//            return false;
+//        }
+//    }
 
     public void addData() {
 

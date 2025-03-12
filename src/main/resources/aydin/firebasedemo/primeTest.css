@@ -1,0 +1,94 @@
+/* Example CSS for a JavaFX FXML file */
+
+/* Root container styling */
+.root {
+    -fx-background-color: #f0f0f0; /* Light gray background */
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 12px;
+}
+
+/* Label styling */
+.label {
+    -fx-text-fill: #333; /* Dark gray text */
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #5CA000; /* Green background */
+    -fx-text-fill: white;
+    -fx-padding: 8px 15px;
+    -fx-border-radius: 5px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand; /* Changes mouse cursor to a hand on hover */
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Darker green on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #3e8e41; /* Even darker green when pressed */
+}
+
+/* Text field styling */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 3px;
+    -fx-padding: 5px;
+}
+
+.text-field:focused {
+    -fx-border-color: #4CAF50; /* Green border when focused */
+}
+
+/* Pane styling */
+.pane {
+    -fx-background-color: #e0e0e0; /* Slightly darker gray */
+    -fx-padding: 10px;
+    -fx-border-color: #bbb;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+/* List view styling */
+.list-view {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 3px;
+}
+
+.list-view .list-cell {
+    -fx-padding: 5px;
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: #f8f8f8; /* Light gray for even rows */
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #b3d9ff; /* Light blue when selected */
+    -fx-text-fill: black;
+}
+
+/* Progress Bar */
+.progress-bar .bar {
+    -fx-background-color: #4CAF50;
+}
+
+.progress-bar .track {
+    -fx-background-color: #ddd;
+}
+
+/* Example of setting an id style */
+#mySpecialButton {
+    -fx-background-color: purple;
+    -fx-text-fill: yellow;
+}
+
+/* Example of setting a style based on a custom style class*/
+.custom-red-label{
+    -fx-text-fill: red;
+}

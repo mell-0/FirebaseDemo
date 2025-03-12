@@ -35,8 +35,8 @@ public class DemoApp extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        fstore = contxtFirebase.firebase();
-        fauth = FirebaseAuth.getInstance();
+        fstore = contxtFirebase.firebase(); // firestore database
+        fauth = FirebaseAuth.getInstance(); // authentication
 
         //scene = new Scene(loadFXML("primary"), 640, 480); // this changes the starting page?
         scene = new Scene(loadFXML("Welcome_Screen"), 640, 480);

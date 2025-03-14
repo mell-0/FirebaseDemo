@@ -29,8 +29,8 @@ public class WelcomeScreenController
     @FXML
     private TextField passwordTextField;
 
-    @FXML
-    private TextField phoneNumTextField;
+//    @FXML
+//    private TextField phoneNumTextField;
 
     @FXML
     private Button sign_in;
@@ -96,9 +96,10 @@ public class WelcomeScreenController
                 .setEmail(usernameTextField.getText())
                 .setEmailVerified(false)
                 .setPassword(passwordTextField.getText())
-                .setPhoneNumber(phoneNumTextField.getText())
-                .setDisplayName("Jon Doe")
+                //.setPhoneNumber(phoneNumTextField.getText())
+                //.setDisplayName("Jon Doe")
                 .setDisabled(false);
+
 
         UserRecord userRecord;
         try {
